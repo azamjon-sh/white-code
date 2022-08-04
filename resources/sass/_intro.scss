@@ -1,0 +1,59 @@
+.intro {
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        max-width: 576px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150.6%;
+        letter-spacing: 0.03em;
+        color: #153461;
+        opacity: 0.65;
+        margin-bottom: 100px;
+    }
+
+    &__img {
+        flex-grow: 1;
+        height: 821px;
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 134.2%;
+            max-width: 1234px;
+            left: 0;
+            height: auto;
+        }
+    }
+}
+
+
+@media (max-width: 1575px) {
+    .intro {
+        &__img {
+            height: auto;
+            img {
+                position: relative;
+                width: 110%;
+            }
+        }
+
+        &__left {
+            max-width: 518px;
+        }
+    }
+}

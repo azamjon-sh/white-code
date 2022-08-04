@@ -1,0 +1,85 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import "../font/stylesheet";
+
+// Modules
+@import 'header';
+@import 'intro';
+@import 'history';
+
+* {
+    font-family: 'Catamaran', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    background-image: unset;
+    outline: none;
+    background-color: #99BAED;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    padding: 0 32px;
+    height: 76px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+
+    &:after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 17px;
+        left: 0;
+        content: "";
+        background: rgba(153, 186, 237, 0.5);
+        filter: blur(15px);
+        border-radius: 20px;
+        z-index: -1;
+    }
+}
+
+.h1, .h2 {
+    font-weight: 700;
+    font-size: 75px;
+    color: #163561;
+
+    .yellow {
+        color: #FBB400;
+    }
+}
+
+.h1 {
+    font-size: 75px;
+    line-height: 1.3;
+}
+
+.h2 {
+    font-size: 70px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1575px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 1575px) {
+    .h1 {
+        font-size: 65px;
+        line-height: 1.2;
+    }
+    .btn {
+        padding: 0 24px;
+        height: 60px;
+    }
+}
